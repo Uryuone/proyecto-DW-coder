@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/**----------------------------Reset---------------------*/
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+}
+
+/**----------------------------HEADER---------------------*/
+header{
+    height: 100px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    justify-content: space-evenly;
+}
+header img {
+    height: fit-content;
+    max-width: 300px;
+    max-height: 300px;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: inline;
+}
+header nav ul li {
+    margin-left: 60px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+}
+
+header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    text-align: right;
+}
+header nav ul li a:hover {
+    color: #fff;
+    background-color: #ff5b1e;
+    text-align: center;
+    border-color: #ff5b1e;
+    padding: 5px 20px;
+    border-radius: 10px;
+
+}
+.boton a {
+    color: #fff;
+    background-color: #ff5b1e;
+    text-align: center;
+    border-color: #ff5b1e;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+
+/**----------------------------MAIN---------------------*/
+
+.banner-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/BANNER-WEB-INCENDIOS-15-01.jpg);
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    align-items: center;
+}
+.banner-home h1 {
+    font-size: 70px;
+    text-align: center;
+    color: #fff;
+    padding: 100px;
+    border: 5px #fff;
+}
+.donar-button{
+    color: #fff;
+    background-color: #ff5b1e;
+    text-align: center;
+    border-color: #ff5b1e;
+    padding: 8px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 70px;
+}
+
+/**--causas destacadas--*/
+.causas-destacadas h2{
+    font-size: 40px;
+    margin: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+.tarjetas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+}
+.tarjetas div{
+
+    border: 10px black;
+    text-align: center;
+    overflow: hidden;
+    height: 400px;
+    justify-content: center;
+    padding: 30px;
+
+}
+.tarjetas  div img{
+    width: 300px;
+    height: 300px;
+    
+}
+.tarjetas div h3{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.tarjetas p {
+    margin-top: 10px;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+.boton{
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5b1e;
+    text-align: center;
+    border-color: #ff5b1e;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+/**--quienes somos--*/
+.quienes-somos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 7em;
+}
+.quienes-somos h2{
+    font-size: 40px;
+    margin: 0px;
+    text-align: right;
+    margin-top: 5%;
+    
+}
+.quienes-somos p{
+    font-size: 25px;
+    margin: 0px;
+    text-align: center;
+    padding: 15px;
+    max-width: 30%;
+    overflow: hidden;
+}
+.quienes-somos a{
+    font-size: 15px;
+    margin: 0px;
+    text-align: center;
+    color: #fff;
+    background-color: #ff5b1e;
+    text-align: center;
+    border-color: #ff5b1e;
+    padding: 5px 20px;
+    border-radius: 10px;
+    max-height: 50px;
+    margin-top: 5%;
+}
+/**--rrss--*/
+.rrss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 7em;
+}
+
+.rrss h2{
+    font-size: 40px;
+    margin: 0px;
+    text-align: center;  
+    max-width: 30%;
+}
+.rrss img{
+    height: 50px;
+    width: 50px;
+}
+.rrss ul{
+    margin-top: 3%;
+}
+.rrss ul li {
+    display: inline-block;
+    align-content: center;
+}
+/**----------------------------FOOTER---------------------*/
+footer{
+    background-color: #ff5b1e;
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+}
+footer nav{
+    margin-top: 30px;
+}
+footer nav ul {
+    list-style: none;
+    display: inline;
+
+
+}
+footer img{
+    height: 200px;
+    width: 200px;    
+    height: fit-content;
+    padding: 20px;
+    margin-top: 30px;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+footer h4{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 17px;
+    margin:25px;
+    margin-top: 70px;
+}
+footer form input{
+margin: 15px;
+justify-content: center;
+}
+footer form label{
+    color: #fff;
+}
+footer form input[type="submit"] {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius:10px ;
+    padding: 20px;
+}
+
+/**--formularios--*/
+input[type="email"],[type="text"],select,textarea {
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 10px;
+outline: none;
+}
+select{
+    overflow: hidden;
+    max-width: 80%;
+}
+button[type="submit"],
+button[type="button"] {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5b1e;
+    text-align: center;
+    border-color: #ff5b1e;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer
+}
+/**--se voluntario--*/
+.se-voluntario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+.se-voluntario img{
+    max-width: 800px;
+    max-height: 100%;
+    margin-left: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    
+}
+.se-voluntario form div{
+    padding: 10px;
+}
+/**--causas humanas--*/
+.causas-humanas h1{
+    text-align: center;
+    padding: 50px;
+}
+/**--Contacto--*/
+
+.contacto section h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+.contacto-2 section h2{
+    text-align: left;
+    margin: 10px;
+    color: #858585;
+    font-size: 30px;
+}
+.contacto-2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+}
+.contacto-2 form{
+    padding: 0px;
+}
+.contacto-2 form h3{
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
