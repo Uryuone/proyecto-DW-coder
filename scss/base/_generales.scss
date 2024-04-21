@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/**----------------------------Reset---------------------*/
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+}
+.donar-button {
+    color: #fff;
+    background-color: #ff5b1e;
+    text-align: center;
+    border-color: #ff5b1e;
+    padding: 8px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 70px;
+}
+/**----------------------------bootstrap clases---------------------*/
+.navbar-brandr{
+    max-width: 76%;
+    img {
+        height: fit-content;
+        max-width: 80%;
+        max-height: 80px;
+    }
+
+} 
+.dropdown-item:hover{
+    background-color: #ff5b1e !important;
+}
+.navbar-collapse {
+    justify-content: space-evenly;
+    margin-right: 10%;
+}
+
+/**---carrusel--*/
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+}
+.carousel-item img {
+    max-height: 800px;
+}
+
+/**------------------------Formularios-------------------------------*/
+input[type="email"],
+[type="text"],
+[type="number"],
+select,
+textarea {
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
+select {
+    overflow: hidden !important;
+    max-width: 60%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
+button[type="submit"],
+button[type="button"] {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5b1e;
+    text-align: center;
+    border-color: #ff5b1e;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer
+}

@@ -1,0 +1,24 @@
+header {
+    z-index: 1;
+    nav {
+        ul {
+            li {
+                margin-left: 60px;
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 40px;
+                a{
+                    &:hover{
+                        color: #fff !important;
+                        background-color: #ff5b1e !important;
+                        text-align: center;
+                        border-color: #ff5b1e;
+                        padding: 5px 20px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+

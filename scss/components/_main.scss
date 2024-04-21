@@ -1,0 +1,231 @@
+.causas-destacadas{
+    h2{
+        font-size: 40px;
+        margin: 10px;
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+.quienes-somos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 7em;
+    h2{
+        font-size: 40px;
+        text-align: right;
+    }
+    p{
+        font-size: 25px;
+        text-align: center;
+        padding: 0.5em;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .quienes-somos-boton{
+        text-align: center;
+        margin-block: auto;
+        a{
+            text-decoration: none;
+            font-size: 15px;
+            color: #fff;
+            background-color: #ff5b1e;
+            border-color: #ff5b1e;
+            padding: 10px 40px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.rrss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5em;
+    align-items: self-end;
+    h2{
+        font-size: 40px;
+        margin: 0px;
+        text-align: center;
+        max-width: 30%;
+    }
+    ul{
+        margin-top: 5%;
+        padding: 0;
+        vertical-align: middle;
+        li{
+            display: inline-block;
+            align-content: center;
+            img{
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}
+/**--se voluntario--*/
+.se-voluntario{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    form{
+        h1{
+            text-align: center;
+            padding: 3%;
+        }
+        .se-voluntario-form{
+            background-color: rgba(110, 110, 110, 0.226);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            max-width: 100%;
+            div{
+                max-width: 100%;
+                padding: 10px;
+            }
+        }
+
+    }
+    img{
+        max-width: 800px;
+        max-height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 2%;
+    }
+}
+/**--Nosotros--*/
+.nosotros-text{
+    margin: 8%;
+}
+.nosotros-grid-container {
+    margin: 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+
+    .nosotros-grid-container-item {
+        overflow: hidden;
+        position: relative;
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .nosotros-grid-container-item-texto-hover {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 14px;
+            z-index: 2;
+            text-align: center;
+        }
+
+        &:hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 91, 30, 0.7);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        &:hover .nosotros-grid-container-item-texto-hover {
+            display: block;
+        }
+    }
+}
+/**--Contacto--*/
+.contacto{
+    section{
+        h1{
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+        }
+    }
+    .contacto-datos{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        margin-bottom: 20px;
+        .contacto-datos-mapa-num{
+            h2{
+                margin: 10px;
+                color: #858585;
+                font-size: 30px;
+                
+            }
+        }
+        form{
+            padding: 0px;
+            h3{
+                margin: 10px;
+                text-align: center;
+                font-size: 25px;
+            }
+            .contacto-datos-form{
+                background-color: rgba(110, 110, 110, 0.226);
+                margin: 3%;
+                display: flex;
+                flex-direction: column;
+                max-width: 99%;
+                div{
+                    padding: 10px;
+                    max-width: 100%;
+                }
+            }
+        }
+
+    }
+}
+/**--causas--*/
+.causas-humanas{
+    margin: 5%;
+    .causas-humanas-texto{
+        h1{
+            text-align: center;
+        }
+        p{
+            margin: 5%;
+        }
+    }
+}
+/**--Donar--*/
+.donar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    form{
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            max-width: 100%;
+            max-height: fit-content;
+            margin: 5%;
+        }
+        .donar-datos-form{
+            background-color: rgba(110, 110, 110, 0.226);
+            margin: 3%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            div{
+                padding: 10px;
+                max-width: 100%;
+                overflow: inherit;
+            }
+        }
+    }
+}
