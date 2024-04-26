@@ -1,8 +1,6 @@
 footer{
-    background-color: #ff5b1e;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    background-color: $color-principal;
+    @include flex(flex,space-evenly,center,none);
     text-align: center;
     padding: 20px;
     img{
@@ -12,11 +10,10 @@ footer{
     }
     nav{
         ul{
+            @include flex(flex,none,none,column);
             list-style: none;
-            display: flex;
             margin: 0;
             padding: 0;
-            flex-direction: column;
             li{
                 margin: 0 20px;
                 a{

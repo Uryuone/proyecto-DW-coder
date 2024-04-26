@@ -1,0 +1,17 @@
+//variables/
+$color-principal:#ff5b1e;
+//lista//
+$font-size: 10px,12px,16px,18px,25px;
+//extend/
+%flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//mixins/
+@mixin flex($flex,$justify,$align,$direction){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

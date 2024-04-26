@@ -10,9 +10,9 @@ header {
                 a{
                     &:hover{
                         color: #fff !important;
-                        background-color: #ff5b1e !important;
+                        background-color: $color-principal !important;
                         text-align: center;
-                        border-color: #ff5b1e;
+                        border-color: $color-principal;
                         padding: 5px 20px;
                         border-radius: 10px;
                     }

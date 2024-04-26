@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.se-voluntario form .se-voluntario-form, .donar, .donar form .donar-datos-form {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /**----------------------------Reset---------------------*/
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -107,8 +112,9 @@ header {
 
 .quienes-somos {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
   margin: 7em; }
   .quienes-somos h2 {
     font-size: 40px;
@@ -133,10 +139,10 @@ header {
 
 .rrss {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  margin: 5em;
-  align-items: self-end; }
+  align-items: self-end;
+  flex-direction: row;
+  margin: 5em; }
   .rrss h2 {
     font-size: 40px;
     margin: 0px;
@@ -156,6 +162,8 @@ header {
 /**--se voluntario--*/
 .se-voluntario {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   padding: 30px; }
   .se-voluntario form h1 {
@@ -163,8 +171,6 @@ header {
     padding: 3%; }
   .se-voluntario form .se-voluntario-form {
     background-color: rgba(110, 110, 110, 0.226);
-    display: flex;
-    align-items: center;
     flex-direction: column;
     max-width: 100%; }
     .se-voluntario form .se-voluntario-form div {
@@ -199,7 +205,7 @@ header {
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      font-size: 14px;
+      font-size: 16px;
       z-index: 2;
       text-align: center; }
     .nosotros-grid-container .nosotros-grid-container-item:hover::before {
@@ -224,6 +230,7 @@ header {
 .contacto .contacto-datos {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-direction: row-reverse;
   margin-bottom: 20px; }
   .contacto .contacto-datos .contacto-datos-mapa-num h2 {
@@ -237,10 +244,12 @@ header {
       text-align: center;
       font-size: 25px; }
     .contacto .contacto-datos form .contacto-datos-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       background-color: rgba(110, 110, 110, 0.226);
       margin: 3%;
-      display: flex;
-      flex-direction: column;
       max-width: 99%; }
       .contacto .contacto-datos form .contacto-datos-form div {
         padding: 10px;
@@ -256,10 +265,7 @@ header {
 
 /**--Donar--*/
 .donar {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 5%; }
   .donar form h1 {
     text-align: center; }
@@ -271,8 +277,6 @@ header {
   .donar form .donar-datos-form {
     background-color: rgba(110, 110, 110, 0.226);
     margin: 3%;
-    display: flex;
-    align-items: center;
     flex-direction: column; }
     .donar form .donar-datos-form div {
       padding: 10px;
@@ -284,6 +288,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: none;
   text-align: center;
   padding: 20px; }
   footer img {
@@ -291,11 +296,13 @@ footer {
     width: fit-content;
     margin-top: 30px; }
   footer nav ul {
-    list-style: none;
     display: flex;
+    justify-content: none;
+    align-items: none;
+    flex-direction: column;
+    list-style: none;
     margin: 0;
-    padding: 0;
-    flex-direction: column; }
+    padding: 0; }
     footer nav ul li {
       margin: 0 20px; }
       footer nav ul li a {
@@ -369,7 +376,7 @@ footer {
     align-items: center;
     margin: 3em; }
   .quienes-somos h2 {
-    font-size: 24px; }
+    font-size: 25px; }
   .quienes-somos p {
     font-size: 16px;
     max-width: 90%; }
@@ -401,7 +408,7 @@ footer {
     margin: 2em;
     align-items: center; }
   .rrss h2 {
-    font-size: 20px;
+    font-size: 18px;
     max-width: 50%; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -450,7 +457,7 @@ footer {
   footer nav ul li {
     margin: 10px; }
   footer form h4 {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px; }
   footer form div input {
     margin: 10px; } }

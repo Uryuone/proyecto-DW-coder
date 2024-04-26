@@ -30,7 +30,7 @@
     }
 
     .quienes-somos p {
-        font-size: 18px;
+        font-size:  nth($font-size , $n:4 );
         text-align: start;
         max-width: 100%;
     }
@@ -53,12 +53,12 @@
     }
 
     .quienes-somos p {
-        font-size: 16px;
+        font-size:  nth($font-size , $n:3 );
         width: 100%;
     }
 
     .quienes-somos-boton a {
-        font-size: 12px;
+        font-size:  nth($font-size , $n:2 );
         margin-top: 2%;
     }
 }
@@ -72,16 +72,16 @@
     }
 
     .quienes-somos h2 {
-        font-size: 24px;
+        font-size:  nth($font-size , $n:5 );
     }
 
     .quienes-somos p {
-        font-size: 16px;
+        font-size:  nth($font-size , $n:3 );
         max-width: 90%;
     }
 
     .quienes-somos-boton a {
-        font-size: 10px;
+        font-size:  nth($font-size , $n:1 );
         margin-top: 1%;
     }
 }
@@ -95,7 +95,7 @@
     }
 
     .rrss h2 {
-        font-size: 18px;
+        font-size:  nth($font-size , $n:4 );
         max-width: 50%;
     }
 
@@ -119,7 +119,7 @@
     }
 
     .rrss h2 {
-        font-size: 20px;
+        font-size:  nth($font-size , $n:4 );
         max-width: 50%;
     }
 
@@ -151,7 +151,7 @@
     }
 
     footer form h4 {
-        font-size: 16px;
+        font-size:  nth($font-size , $n:3 );
         margin-top: 20px;
     }
 
@@ -192,7 +192,7 @@
     }
 
     footer form h4 {
-        font-size: 16px;
+        font-size:  nth($font-size , $n:4 );
         margin-top: 20px;
     }
 
@@ -255,7 +255,7 @@
                 h3{
                     margin: 10px;
                     text-align: center;
-                    font-size: 25px;
+                    font-size:  nth($font-size , $n:5 );
                 }
                 .contacto-datos-form{
                     align-items: center;

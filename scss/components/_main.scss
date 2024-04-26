@@ -7,16 +7,14 @@
     }
 }
 .quienes-somos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex(flex,space-around,center,row);
     margin: 7em;
     h2{
         font-size: 40px;
         text-align: right;
     }
     p{
-        font-size: 25px;
+        font-size:  nth($font-size , $n:5 );
         text-align: center;
         padding: 0.5em;
         max-width: 100%;
@@ -29,8 +27,8 @@
             text-decoration: none;
             font-size: 15px;
             color: #fff;
-            background-color: #ff5b1e;
-            border-color: #ff5b1e;
+            background-color: $color-principal;
+            border-color: $color-principal;
             padding: 10px 40px;
             border-radius: 10px;
         }
@@ -38,11 +36,8 @@
 }
 
 .rrss{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include flex(flex,space-evenly,self-end,row);
     margin: 5em;
-    align-items: self-end;
     h2{
         font-size: 40px;
         margin: 0px;
@@ -65,8 +60,7 @@
 }
 /**--se voluntario--*/
 .se-voluntario{
-    display: flex;
-    flex-direction: row;
+    @include flex(flex,center,center,row);
     padding: 30px;
     form{
         h1{
@@ -75,8 +69,7 @@
         }
         .se-voluntario-form{
             background-color: rgba(110, 110, 110, 0.226);
-            display: flex;
-            align-items: center;
+            @extend %flexcenter;
             flex-direction: column;
             max-width: 100%;
             div{
@@ -120,7 +113,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
-            font-size: 14px;
+            font-size:  nth($font-size , $n:3 );
             z-index: 2;
             text-align: center;
         }
@@ -152,9 +145,7 @@
         }
     }
     .contacto-datos{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row-reverse;
+        @include flex(flex,space-around,center,row-reverse);
         margin-bottom: 20px;
         .contacto-datos-mapa-num{
             h2{
@@ -169,13 +160,12 @@
             h3{
                 margin: 10px;
                 text-align: center;
-                font-size: 25px;
+                font-size:  nth($font-size , $n:5 );
             }
             .contacto-datos-form{
+                @include flex(flex,center,center,column);
                 background-color: rgba(110, 110, 110, 0.226);
                 margin: 3%;
-                display: flex;
-                flex-direction: column;
                 max-width: 99%;
                 div{
                     padding: 10px;
@@ -200,10 +190,8 @@
 }
 /**--Donar--*/
 .donar{
-    display: flex;
+    @extend %flexcenter;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 5%;
     form{
         h1{
@@ -218,8 +206,7 @@
         .donar-datos-form{
             background-color: rgba(110, 110, 110, 0.226);
             margin: 3%;
-            display: flex;
-            align-items: center;
+            @extend %flexcenter;
             flex-direction: column;
             div{
                 padding: 10px;

@@ -14,9 +14,9 @@
 }
 .donar-button {
     color: #fff;
-    background-color: #ff5b1e;
+    background-color:$color-principal;
     text-align: center;
-    border-color: #ff5b1e;
+    border-color: $color-principal;
     padding: 8px 20px;
     margin: 20px;
     border-radius: 10px;
@@ -35,7 +35,7 @@
 
 } 
 .dropdown-item:hover{
-    background-color: #ff5b1e !important;
+    background-color: $color-principal !important;
 }
 .navbar-collapse {
     justify-content: space-evenly;
@@ -87,9 +87,9 @@ button[type="submit"],
 button[type="button"] {
     text-decoration: none;
     color: #fff;
-    background-color: #ff5b1e;
+    background-color:$color-principal;
     text-align: center;
-    border-color: #ff5b1e;
+    border-color: $color-principal;
     padding: 5px 20px;
     border-radius: 10px;
     cursor: pointer
