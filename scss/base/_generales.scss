@@ -25,6 +25,12 @@
     width: 70px;
 }
 /**----------------------------bootstrap clases---------------------*/
+a{
+    &:hover{
+        text-decoration: none;
+        color: black;
+    }
+} 
 .navbar-brandr{
     max-width: 76%;
     img {

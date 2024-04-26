@@ -28,6 +28,10 @@
   width: 70px; }
 
 /**----------------------------bootstrap clases---------------------*/
+a:hover {
+  text-decoration: none;
+  color: black; }
+
 .navbar-brandr {
   max-width: 76%; }
   .navbar-brandr img {
@@ -102,7 +106,8 @@ header {
       text-align: center;
       border-color: #ff5b1e;
       padding: 5px 20px;
-      border-radius: 10px; }
+      border-radius: 10px;
+      transition: 1s; }
 
 .causas-destacadas h2 {
   font-size: 40px;
