@@ -16,6 +16,14 @@
     }
 
 }
+
+@media only screen and (max-width: 760px){
+    .causas-destacadas{
+        h2{
+            font-size: 30px;
+        }
+    }
+}
 /**--quienes somos--*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .quienes-somos {
@@ -65,7 +73,6 @@
 
 @media only screen and (max-width: 350px) {
     .quienes-somos {
-        margin: 1em;
         flex-direction: column;
         align-items: center;
         margin: 3em;
@@ -95,8 +102,10 @@
     }
 
     .rrss h2 {
-        font-size:  nth($font-size , $n:4 );
+        font-size:  nth($font-size , $n:5 );
         max-width: 50%;
+        margin: 1em;
+        text-align: center;
     }
 
     .rrss ul li {
@@ -119,8 +128,9 @@
     }
 
     .rrss h2 {
-        font-size:  nth($font-size , $n:4 );
+        font-size:  nth($font-size , $n:5 );
         max-width: 50%;
+        margin: 1em;
     }
 
 }
